@@ -17,7 +17,7 @@ label start:
     # Get user's name screen
     show screen input_screen with dissolve
     call screen input_screen
-    define user = Character(_return)
+    define user = Character("You")
 
     # Prologue scene
     scene gas-station-fill-page
@@ -37,7 +37,7 @@ label start:
 
     # Chapter 0.5
     scene gray-bg
-    show god-resized with dissolve
+    show god with dissolve
     god "Hello my child"
     user "You: God? Is that you?"
     god "Yes my child"
@@ -93,7 +93,7 @@ label start:
         "You heard later that Jake was hit by a truck after he left work"
 
         scene gray-bg
-        show god-resized with dissolve
+        show god with dissolve
         god "...You had one job"
         god "How was that getting him to fall in love?"
         god "We can repeat this for as many times as it takes"
@@ -117,14 +117,14 @@ label start:
         jake "This is JakeOb's Deli. They've got some sandwiches and salads and such. What do you want to order?"
 
         menu:
-        "Eat a Total Loss Sandwich." :
-            jump total_loss
+            "Eat a Total Loss Sandwich." :
+                jump total_loss
 
-        "Eat a Salad." :
-            jump salad
+            "Eat a Salad." :
+                jump salad
 
-        "Eat a Beef Eater Sandwich" :
-            jump beef
+            "Eat a Beef Eater Sandwich" :
+                jump beef
 
     label total_loss :
         jake "Really? Total Loss Sandwich? We work at an insurance company."
@@ -136,12 +136,12 @@ label start:
     label salad :
     jake "A salad? Alright, that's an interesting choice."
     jake "Anyways, I've gotta go real quick. Be right back. *He leaves*"
-    "Unknown: Did somebody say Salad?
+    "Unknown: Did somebody say Salad?"
     "You see a very green man walk in"
     user "Uh yeah, I ordered a salad."
     martin "I loooove salad"
     user "Okay buddy"
-    martin "You know, salad can help you cut off 15% or more calories"
+    martin "You know, salad can help you cut off 15 percent or more calories"
     user "I didn't really need to know that"
     martin "*sniffs* I sense a competitor. I shall take my leave *leaves*"
     jake "*Walks back in* Alright, let's eat."
