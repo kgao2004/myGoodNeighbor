@@ -1,2 +1,5 @@
 saves/
 cache/
+.vscode/
+
+.DS_Store
