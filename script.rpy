@@ -118,7 +118,8 @@ label name_death :
 
     scene gray-bg
     show god with dissolve
-    god "...You had one job"
+    god "..."
+    god "You had one job..."
     god "How was that getting him to fall in love?"
     god "We can repeat this for as many times as it takes"
     jump wake_up
@@ -131,17 +132,21 @@ label name :
     jake "Nice to meet you YN! I'll tell you what, let's go on a tour of the office if you're new here."
     user "Sure, that sounds nice."
     jake "Alright then, let's go on a walk. Hopefully it'll wake you up a bit."
+    scene bloomington
     "You head to the main office floor"
+    show happy-jake with dissolve
     jake "This is the office floor. This is where everybody works."
     user "Where is everybody?"
     jake "Huh. I guess they could be in the break room."
+    scene breakroom
     "You head to the break room"
+    show happy-jake with dissolve
     jake "This is the break room. Grab some snacks or a drink if you want"
     user "Nobody here either"
     jake "Yeah, you're right. That's weird. Anyways, they could be at lunch. We should head in that direction."
     scene jason_sdeli
-    show happy-jake with dissolve
     "You follow Jake as he leads you across the street to his favorite restaurant. JakeOb's Deli"
+    show happy-jake with dissolve
     jake "This is JakeOb's Deli. They've got some sandwiches and salads and such. What do you want to order?"
 
 
@@ -220,7 +225,7 @@ label lunch :
     "You can't hear him well, but it sounds like he's whispering \"Insurance, insurance, insurance\" over and over again"
     "You decide to ignore it and head to your cubicle to finish the day"
     "After the day is done, Jake meets you outside"
-    scene bloomington
+    scene atlanta
     show happy-jake with dissolve
     jake "Hey there YN! Ready to head out?"
     user "Yep, sounds good!"
