@@ -6,6 +6,7 @@
 define jake = Character("Jake", who_color="#990000")
 define user = Character("You")
 define truck = Character("Truck")
+define god = Character("God")
 
 
 # The game starts here.
@@ -29,6 +30,30 @@ label start:
     show truck with zoomin
     truck "*HONKKKK*"
     user "You: AHHHHH"
+
+    # Chapter 0.5
+    scene gray-bg
+    show god-resized with dissolve
+    god "Hello my child"
+    user "You: God? Is that you?"
+    god "Yes my child"
+    user "You: Was that a truck"
+    god "Yes my child"
+    user "You: Why am I here?"
+    god "Yes my child"
+    user "You: What?"
+    god "I mean...You have a glorious purpose. You see, there is a man I care for very much. His name is Jake from State Farm."
+    user "You: Jake who?"
+    god "From State Farm"
+    user "You: No, what's his last name?"
+    god "From State Farm"
+    user "You: Wow that is a stupid last name"
+    god "It's Greek."
+    user "You: Okayyy then. What about Mr. From State Farm?"
+    god "You see, his fate is incredibly strong. Without my intervention, he will inevitably be hit by a truck."
+    user "You: So why don't you do something about it?"
+    god "This is me doing something about it. Making you do something about it."
+    user "You: Lame. What do I need to do?"
 
     # This ends the game.
     return
