@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -31,6 +31,9 @@ label start:
     truck "*HONKKKK*"
     user "You: AHHHHH"
 
+    scene black
+    ""
+
     # Chapter 0.5
     scene gray-bg
     show god-resized with dissolve
@@ -54,6 +57,64 @@ label start:
     user "You: So why don't you do something about it?"
     god "This is me doing something about it. Making you do something about it."
     user "You: Lame. What do I need to do?"
+    god "Make Jake fall in love with you. The power of love is the only thing that can overcome his irreversible fate."
+    user "You: What?! I can't do that!"
+    god "You can. I will give you pre-made responses to every point at which Jake could die."
+    god "But be careful, as my responses are not perfect. Some may accelerate his death to where even I cannot save him."
+    user "You: Okay then, I think I can do it. I'll save Jake from State Farm!"
+    god "Good luck my child."
+
+    label wake_up :
+        scene black
+        "You hear a voice calling out to you"
+        "Unknown: Hey! Are you alright?"
+
+
+        scene office
+        show happy-jake with dissolve
+        "You open your eyes. There is a man standing in front of you."
+        "You've never met him before, but you can tell from a first clance that this is the man you need to protect. This is Jake from State Farm"
+        jake "Are you alright?"
+        user "You: Oh yeah, sorry."
+        jake "Are you new here? What's your name?"
+
+        menu:
+            "Say your Name." :
+                jump name
+
+            "Decline." :
+                jump name_death
+
+    label name_death :
+        jake "Oh, okay. I guess I'll leave you be then."
+        user "Okay, bye I guess"
+        hide happy-jake
+        "You heard later that Jake was hit by a truck after he left work"
+
+        scene gray-bg
+        show god-resized with dissolve
+        god "...You had one job"
+        god "How was that getting him to fall in love?"
+        god "We can repeat this for as many times as it takes"
+        jump wake_up
+
+
+    label name :
+        user "Oh, I'm (name)"
+        jake "Nice to meet you (name). I'll tell you what, let's go on a tour of the office if you're new here."
+        user "Sure, that sounds nice."
+        jake "Alright then, let's go on a walk. Hopefully it'll wake you up a bit."
+        "You head to the main office floor"
+        jake "This is the office floor. This is where everybody works."
+        user "Where is everybody?"
+        jake "Huh. I guess they could be in the break room."
+        "You head to the break room"
+        jake "This is the break room. Grab some snacks or a drink if you want"
+        user "Nobody here either"
+        jake "Yeah, you're right. That's weird. Anyways, they could be at lunch. We should head in that direction."
+        "You follow Jake as he leads you across the street to his favorite restaurant. JakeOb's Deli"
+        jake "This is JakeOb's Deli. They've got some sandwiches and salads and such. What do you want to order?"
+
 
     # This ends the game.
     return
