@@ -7,6 +7,7 @@ define jake = Character("Jake", who_color="#990000")
 define user = Character("You")
 define truck = Character("Truck")
 define god = Character("God")
+define martin = Character("Martin")
 
 
 # The game starts here.
@@ -114,6 +115,46 @@ label start:
         jake "Yeah, you're right. That's weird. Anyways, they could be at lunch. We should head in that direction."
         "You follow Jake as he leads you across the street to his favorite restaurant. JakeOb's Deli"
         jake "This is JakeOb's Deli. They've got some sandwiches and salads and such. What do you want to order?"
+
+        menu:
+        "Eat a Total Loss Sandwich." :
+            jump total_loss
+
+        "Eat a Salad." :
+            jump salad
+
+        "Eat a Beef Eater Sandwich" :
+            jump beef
+
+    label total_loss :
+        jake "Really? Total Loss Sandwich? We work at an insurance company."
+        user "I thought it would be funny"
+        jake "It's not. You ruined the mood *He leaves*"
+        user "Jake, wait! Don't cross the street!"
+        "You see Jake get run over by a truck"
+
+    label salad :
+    jake "A salad? Alright, that's an interesting choice."
+    jake "Anyways, I've gotta go real quick. Be right back. *He leaves*"
+    "Unknown: Did somebody say Salad?
+    "You see a very green man walk in"
+    user "Uh yeah, I ordered a salad."
+    martin "I loooove salad"
+    user "Okay buddy"
+    martin "You know, salad can help you cut off 15% or more calories"
+    user "I didn't really need to know that"
+    martin "*sniffs* I sense a competitor. I shall take my leave *leaves*"
+    jake "*Walks back in* Alright, let's eat."
+    "The two of you have an alright lunch"
+
+    label beef :
+    jake "A Beef Eater? Nice! I love those!"
+    user "Yeah, I thought that you would"
+    jake "I got the exact same thing."
+    user "You've got good taste"
+    jake "Thanks! Then, shall we eat?"
+    "The two of you have a great lunch"
+
 
 
     # This ends the game.
